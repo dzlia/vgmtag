@@ -16,7 +16,7 @@ build $buildDir/vgm.o: cxx $srcDir/vgm.cpp
 build $buildDir/vgmtag: bin $
     $buildDir/main.o $
     $buildDir/vgm.o
-  libs=-lz -lafc
+  libs=-lafc -lz
 
 build app: phony $buildDir/vgmtag
 
